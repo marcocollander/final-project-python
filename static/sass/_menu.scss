@@ -1,0 +1,29 @@
+@use 'var';
+
+.menu {
+  padding: 20px 0;
+  color: inherit;
+  font-size: 1.8rem;
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: var.$color-hover;
+      cursor: pointer;
+    }
+  }
+}

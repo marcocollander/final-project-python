@@ -1,0 +1,32 @@
+@use 'var';
+
+.footer {
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 2rem;
+  color: var.$font-color-primary;
+  font-family: var.$font-secondary;
+  letter-spacing: 1px;
+
+  &__description {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  &__copy {
+    margin-right: 40px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: var.$color-hover;
+    }
+  }
+}
