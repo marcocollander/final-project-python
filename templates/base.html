@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block head %}
+  <title>{% block title %}{% endblock %}Przelicznik walut</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+  {% endblock %}
+
+</head>
+
+<body>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__item"><a href="/" class="memu__link">Strona główna</a></li>
+      <li class="menu__item"><a href="#" class="memu__link">Tabela walut</a></li>
+      <li class="menu__item"><a href="https://api.nbp.pl/" class="memu__link">NBP Web API</a></li>
+      <li class="menu__item"><a href="https://internetowykantor.pl/" class="memu__link">Internetowy kantor</a></li>
+    </ul>
+  </nav>
+  <header class="header">
+    <h1 class="header__heading">Przelicznik walut</h1>
+  </header>
+
+  {%block content %}
+
+  {%endblock%}
+</body>
+
+<footer class="footer">
+  <p class="footer__description">
+    {% block footer %}
+    &copy; Copyright 2023 by <a href="http://raubuc.net/">Zenon Marek Raubuć</a>.
+    {% endblock %}
+  </p>
+</footer>
+
+</html>
