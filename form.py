@@ -3,5 +3,5 @@ from wtforms import StringField, SubmitField, SelectField
 from wtforms.validators import DataRequired
 
 class CalculatorForm(FlaskForm):
-      name = SelectField(, validators=[DataRequired()])
+      name = SelectField('Jak masz na imię?', validators=[DataRequired()])
       submit = SubmitField('Wyślij')

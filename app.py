@@ -25,6 +25,17 @@ def index():
             value = 'Wpisz ilość waluty'
 
     return render_template('index.html', value = value)
+
+@app.route('/tabela', methods=['GET', 'POST'])
+def table():
+    if request.method == 'GET':
+        response = requests.get('https://api.nbp.pl/api/exchangerates/tables/c/')
+        data = response.json()
+        for item in data[0]['rates']:
+            print(f" {item['currency']} {item['code']} {item['bid']:.3f} {item['ask']:.3f}")
+            
+
+    return render_template('table.html', data=data)
     
 
 if __name__ == '__main__':

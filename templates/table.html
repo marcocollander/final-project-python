@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Tabela walut{% endblock %}
+{% block content %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Waluta</th>
+      <th scope="col">Symbol</th>
+      <th scope="col">Kurs kupna</th>
+      <th scope="col">Kurs sprzedaży</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in data[0]['rates'] %}
+    <tr>
+      <td>{{item['currency']}}</td>
+      <td>{{item['code']}}</td>
+      <td> {{item['bid']}}</td>
+      <td>{{item['ask']}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+{% endblock %}
