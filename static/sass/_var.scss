@@ -1,6 +1,26 @@
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Roboto', sans-serif;
 
+$color1: #363434;
+$color2: #3e5a63;
+$color3: #b6690c;
+
+.color1 {
+  color: #2c2523;
+}
+.color2 {
+  color: #3e5a63;
+}
+.color3 {
+  color: #b6690c;
+}
+.color4 {
+  color: #efcb6e;
+}
+.color5 {
+  color: #f8efd9;
+}
+
 $font-primary: 'Open Sans', sans-serif;
 $font-secondary: 'Roboto', sans-serif;
 
@@ -8,4 +28,6 @@ $font-color-primary: #fff;
 $font-color-secondary: #000;
 $color-hover: #c5338d;
 
-$bgcolor-primary: #226856;
+$bgcolor-primary: $color1;
+$bgcolor-secondary: $color2;
+$bgcolor-third: $color3;

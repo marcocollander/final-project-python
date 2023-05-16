@@ -1,7 +1,7 @@
 @use 'var';
 
 .footer {
-  background-color: #333;
+  background-color: var.$bgcolor-primary;
   position: absolute;
   left: 0;
   right: 0;

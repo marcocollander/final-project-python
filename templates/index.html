@@ -2,5 +2,19 @@
 
 
 {%block content %}
-
+<form class="form">
+  <fieldset class="form__border">
+    <legend class="form__description">Wybierz symbol waluty</legend>
+    <div class="convertor">
+      <input class="convertor__value" type="text">
+      <select class="convertor__symbol" name="convertorSymbol" id="convertorSymbol">
+        <option>EUR</option>
+        <option>USD</option>
+        <option>CHF</option>
+      </select>
+      <button class="convertor__btn" type="submit">Przelicz</button>
+      <p class="convertor__result">To jest tyle złoty</p>
+    </div>
+  </fieldset>
+</form>
 {%endblock%}

@@ -1,0 +1,63 @@
+@use 'var';
+
+.content {
+  margin: 50px auto 0;
+  width: 60%;
+  font-family: var.$font-primary;
+  font-size: 1.8rem;
+}
+
+.form {
+  padding: 50px;
+  font-size: inherit;
+  // background-color: var.$bgcolor-third;
+
+  &__border {
+    border: 2px solid brown;
+    padding: 20px;
+  }
+
+  &__description {
+    font-size: 2rem;
+    color: var.$font-color-primary;
+  }
+}
+
+.convertor {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__value {
+    margin-right: 5px;
+    padding: 7px;
+    width: 150px;
+  }
+
+  &__symbol {
+    margin: 0 5px;
+    width: 150px;
+    padding: 5px;
+    font-size: 1.8rem;
+    margin: 20px 0;
+  }
+
+  &__btn {
+    margin: 0 5px;
+    padding: 5px 40px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    border-radius: 3px;
+  }
+
+  &__result {
+    margin-right: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: beige;
+    text-shadow: 1px 1px 1px black;
+  }
+}
