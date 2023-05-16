@@ -13,9 +13,8 @@ data = response.json()
 # print(data[0]['rates'][1]['mid'])
 
 for item in data[0]['rates']:
-    if item['code'] == 'USD':
-        print(f"{item['mid']:.2f}")
     match item['code']:
-        case 'USD':  print(f"{item['mid']:.2f}")
-        case 'EUR':  print(f"{item['mid']:.2f}")
-        case 'CHF':  print(f"{item['mid']:.2f}")
+        case 'USD':  rate = f"{item['mid']:.2f}"
+        case 'EUR':  rate = f"{item['mid']:.2f}"
+        case 'CHF':  rate = f"{item['mid']:.2f}"
+        case _: rate = None
