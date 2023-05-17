@@ -138,6 +138,11 @@
   text-shadow: 1px 1px 1px black;
 }
 
+.header-table {
+  color: #fff;
+  text-align: center;
+}
+
 thead,
 tfoot {
   background-color: #3f87a6;
@@ -154,6 +159,7 @@ caption {
 }
 
 table {
+  margin: 100px auto 0;
   border-collapse: collapse;
   border: 2px solid rgb(200, 200, 200);
   letter-spacing: 1px;

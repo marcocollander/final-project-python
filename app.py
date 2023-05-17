@@ -31,11 +31,11 @@ def table():
     if request.method == 'GET':
         response = requests.get('https://api.nbp.pl/api/exchangerates/tables/c/')
         data = response.json()
-        for item in data[0]['rates']:
-            print(f" {item['currency']} {item['code']} {item['bid']:.3f} {item['ask']:.3f}")
+        date = data[0]['effectiveDate']
+        
             
 
-    return render_template('table.html', data=data)
+    return render_template('table.html', data=data, date=date )
     
 
 if __name__ == '__main__':
